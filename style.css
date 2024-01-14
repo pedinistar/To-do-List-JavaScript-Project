@@ -1,0 +1,128 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #5A6F79, #4e085f);
+  padding: 10px;
+}
+
+.todo-app{
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo-app h2{
+  color: #5A6F79;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-app img{
+  width: 30px;
+  margin-left: 10px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  border-radius: 40px;
+}
+
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+}
+
+input:focus{
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  color: #555;
+}
+
+input::placeholder{
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  color: #555;
+}
+
+button{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background-color: #9CCC65;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  color: white;
+}
+
+ul li{
+  list-style-type: none;
+  color: #555;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before{
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-image: url(assets/oval.png);
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 14px; 
+}
+
+li span{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #4e085f;
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+
+span:hover{
+  background-color: #9CCC65;
+  color: #edeef0;
+}
+
+#checked{
+  color: #555;
+  text-decoration: line-through;
+}
+
+#checked::before{
+  background-image: url(assets/check.png);
+}
+
