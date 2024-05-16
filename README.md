@@ -7,3 +7,5 @@ Key Points
 
 - we can add elements in the html using js by using
    parentContainer.appendChild("child-element-we-want-to-add")
+
+<b>Live Link:</b> https://pedinistar.github.io/To-do-List-JavaScript-Project/
